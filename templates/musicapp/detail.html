@@ -1,0 +1,155 @@
+{% extends 'base.html' %}
+{% load socialaccount %}
+{% block title %} Detail {% endblock title %}
+{% block header %}
+<style>
+	.heart {
+		font-size: 25px;
+		color: red;
+	}
+</style>
+{% endblock header %}
+{% block body %}
+<br>
+{% if messages %}
+<ul class="messages" style="width: 600px;margin-left:400px">
+	{% for message in messages %}
+	<div class="alert alert-success">
+		<strong>Success!</strong> {{message}}
+		<button aria-label="Close" class="close" data-dismiss="alert" type="button">
+			<span aria-hidden="true">&times;</span>
+		</button>
+	</div>
+	{% endfor %}
+</ul>
+{% endif %}
+<br>
+<div class="container">
+	<div>
+		<div class="player">
+			<div class="left"><img height="90" src="{{last_played.song_img.url}}" style="border-radius: 10px 10px 10px 10px;"
+								   width="90"></div>
+			<div class="right">
+				<div class="top">
+					<a class="song" style="margin-left: 15px;color: black;">{{last_played.name}}</a>
+					<a class="artist" style="margin-left: 15px;color:black">{{last_played.album}}</a>
+				</div>
+				<div class="bottom">
+					{% if first_time %}
+					<audio controls="" name="media">
+						<source src="{{last_played.song_file.url}}" type="audio/mpeg">
+					</audio>
+					{% else %}
+					<audio autoplay controls="" name="media">
+						<source src="{{last_played.song_file.url}}" type="audio/mpeg">
+					</audio>
+					{% endif %}
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="card">
+		<div class="container-fliud">
+			<div class="wrapper row">
+				<div class="preview col-md-5">
+
+					<div class="preview-pic tab-content">
+						<div class="tab-pane active"><img height="300" src="{{songs.song_img.url}}" style="padding:20px;border-radius: 60px 60px 60px 60px;"
+														  width="300">
+						</div>
+					</div>
+
+				</div>
+				<div class="details col-md-6">
+					<br>
+					<h3 class="product-title">{{songs.name}}</h3>
+					<h6>Album: {{songs.album}}</h6>
+					<h6>Singer: {{songs.singer}}</h6>
+					<h6>Release Year: {{songs.year}}</h6>
+					<br>
+					<!-- <audio controls>
+						<source src="{{ songs.song_file.url }}" type="audio/mpeg">
+					</audio>   -->
+
+					<form method="post">
+						{% csrf_token %}
+						<button class="btn btn-primary" data-target="#exampleModal" data-toggle="modal" data-whatever="@mdo"
+								style="float: left;" type="button"><i aria-hidden="true"
+																					class="fa fa-plus"></i> Create New
+																											Playlist
+						</button>
+						<div aria-hidden="true" aria-labelledby="exampleModalLabel" class="modal fade" id="exampleModal"
+							 role="dialog" tabindex="-1">
+							<div class="modal-dialog" role="document">
+								<div class="modal-content">
+									<div class="modal-header">
+										<h5 class="modal-title" id="exampleModalLabel">New Playlist</h5>
+										<button aria-label="Close" class="close" data-dismiss="modal" type="button">
+											<span aria-hidden="true">&times;</span>
+										</button>
+									</div>
+									<div class="modal-body">
+										<form>
+											<div class="form-group">
+												<label class="col-form-label" for="recipient-name">Name</label>
+												<input class="form-control" id="recipient-name" name="playlist"
+													   type="text">
+											</div>
+										</form>
+									</div>
+									<div class="modal-footer">
+										<button class="btn btn-secondary" data-dismiss="modal"
+												type="button">Close
+										</button>
+										<button class="btn btn-primary" type="Submit">Create Playlist</button>
+									</div>
+								</div>
+							</div>
+						</div>
+					</form>
+
+					<form method="post">
+						{% csrf_token %}
+						<select class="btn btn-success" name="playlist"
+								onChange="form.submit();" style="margin-left: 10px;width: 170px;">
+							<option disabled selected="selected" style="color: black;">Add to Playlist</option>
+							{% if playlists %}
+							{% for playlist in playlists %}
+							<option value={{playlist.playlist_name}}>{{playlist.playlist_name}}</option>
+							{% endfor %}
+							{% endif %}
+						</select>
+					</form>
+
+					<form method="post">
+						{% csrf_token %}
+						{% if is_favourite %}
+						<span class="d-flex align-items-center mt-2 ml-2">
+                            <!-- <i class="heart fa fa-heart my-auto"></i> -->
+                            <button class="btn btn-danger btn-block" name="rm-fav" style="width: 358px;margin-left:-8px;background-color: red;"
+									type="submit">Remove from Favourites</button>
+                        </span>
+						{% else %}
+						<span class="d-flex align-items-center mt-2 ml-2">
+                            <!-- <i class="heart fa fa-heart my-auto"></i> -->
+                            <button class="btn btn-danger btn-block" name="add-fav" style="width: 358px;margin-left:-8px;background-color: red;"
+									type="submit"><i
+									class="heart fa fa-heart-o my-auto"
+									style="color:white"></i> Add to Favourites</button>
+
+							<!-- <input type="submit" id="favbtn" class="btn btn-primary" name="add-fav" value="Add to Favourites"> -->
+                        </span>
+
+						{% endif %}
+					</form>
+
+
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+
+{% endblock body %}
+

@@ -1,0 +1,258 @@
+{% extends 'base.html' %}
+{% load socialaccount %}
+{% block title %} Home {% endblock title %}
+
+{% block body %}
+
+<br>
+<div class="container">
+	<div class="col-md-13">
+		<form action='' class="form-horizontal" id="searchform" method="get" role="search">
+			<div class="form-group">
+				<div class="input-group">
+					<input class="form-control input-lg " name="q" placeholder="Search Songs "
+						   style="border-radius: 5px;"
+						   type="text" value="{{ request.GET.q }}"/>
+
+					<span class='input-group-btn mx-2'>
+                    <button class="btn btn-primary" style="border-radius: 5px;" type="submit">Search</button>
+                  </span>
+				</div>
+			</div>
+		</form>
+	</div>
+
+	{% if query_search %}
+	<header class="section-heading">
+		<h5 class="section-title">SEARCH RESULTS</h5>
+	</header>
+	<hr>
+	{% endif %}
+	<div>
+		<div class="player">
+			<div class="left"><img height="90" src="{{last_played.song_img.url}}"
+								   style="border-radius: 10px 10px 10px 10px;"
+								   width="90"></div>
+			<div class="right">
+				<div class="top">
+					<a class="song" style="margin-left: 15px;color: black;">{{last_played.name}}</a>
+					<a class="artist" style="margin-left: 15px;color:black">{{last_played.album}}</a>
+				</div>
+				<div class="bottom">
+					{% if first_time %}
+					<audio controls="" name="media">
+						<source src="{{last_played.song_file.url}}" type="audio/mpeg">
+					</audio>
+					{% else %}
+					<audio controls="" name="media">
+						<source src="{{last_played.song_file.url}}" type="audio/mpeg">
+					</audio>
+					{% endif %}
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- Recent Song -->
+	{% if recent_songs %}
+	{% if not query_search %}
+	<header class="section-heading">
+		<h5 class="section-title">RECENTLY PLAYED</h5>
+	</header>
+	<hr>
+	{% endif %}
+	<!-- Recent Song list -->
+	<div class="row" style="margin-right: 65px;margin-left:-15px">
+		{% for song in recent_songs %}
+		<div class="p-3 mb-4 bg-dark text-white" height="90" style="border-radius: 20px 20px 20px 20px;" width="80">
+			<div class="container">
+				<div class="row justify-content-md-center">
+					<div class="col-md-auto">
+						<img class="img-responsive" height="135" src="{{ song.song_img.url}}"
+							 style="border-radius: 8px 8px 8px 8px;"
+							 width="135">
+					</div>
+					<div class="col-md-auto">
+						<div class="row justify-content-md-center">
+							<a class="btn btn-outline-light mt-5 mx-1" href="{% url 'play_song_index' song.id %}"><i
+									aria-hidden="true" class="fa fa-play"></i></a>
+							<a class="btn btn-outline-light mt-5 mx-1" href="{% url 'detail' song.id %}"><i
+									aria-hidden="true" class="fa fa-info-circle"></i></a>
+						</div>
+						<div class="row justify-content-md-center">
+						<div class = "text-white">
+							<h3 class="product-title">{{song.name}}</h3>
+							<h6>By: {{song.singer}}</h6>
+						</div>
+					</div>
+					</div>
+				</div>
+				<br>
+			</div>
+		</div>
+		{% endfor %}
+		<a class="btn btn-primary float-right" href="{% url 'recent' %}" style="border-radius: 20px 20px 20px 20px;">
+			<center style="margin-top: 45px;">View all <i aria-hidden="true" class="fa fa-arrow-right"></i></center>
+		</a>
+	</div>
+
+	<br>
+	<br>
+	{% endif %}
+
+
+	<!-- All Songs -->
+	{% if not query_search %}
+
+	<header class="section-heading">
+		<!-- <a href="{% url 'all_songs' %}" class="btn btn-primary float-right">View all</a> -->
+		<h5 class="section-title">ALL SONGS</h5>
+	</header>
+	<hr>
+	{% endif %}
+	<!-- Song list -->
+	<div class="row" style="margin-right: 65px;margin-left:-15px">
+		{% if all_songs %}
+		{% for song in all_songs %}
+		<div class="p-3 mb-4 bg-dark text-white" height="90" style="border-radius: 20px 20px 20px 20px;" width="80">
+			<div class="container">
+				<div class="row justify-content-md-center">
+					<div class="col-md-auto">
+						<img class="img-responsive" height="135" src="{{ song.song_img.url}}"
+							 style="border-radius: 8px 8px 8px 8px;"
+							 width="135">
+					</div>
+					<div class="col-md-auto">
+						<div class="row justify-content-md-center">
+							<a class="btn btn-outline-light mt-5 mx-1" href="{% url 'play_song_index' song.id %}"><i
+									aria-hidden="true" class="fa fa-play"></i></a>
+							<a class="btn btn-outline-light mt-5 mx-1" href="{% url 'detail' song.id %}"><i
+									aria-hidden="true" class="fa fa-info-circle"></i></a>
+						</div>
+						<div class="row justify-content-md-center">
+						<div class = "text-white">
+							<h3 class="product-title">{{song.name}}</h3>
+							<h6>By: {{song.singer}}</h6>
+						</div>
+					</div>
+					</div>
+				</div>
+				<br>
+			</div>
+		</div>
+		{% endfor %}
+		{% endif %}
+		{% if not query_search %}
+		<a class="btn btn-primary float-right" href="{% url 'all_songs' %}" style="height: 135px;">
+			<center style="margin-top: 45px;">View all <i aria-hidden="true" class="fa fa-arrow-right"></i></center>
+		</a>
+		{% endif %}
+	</div>
+	<br>
+	<br>
+
+
+	<!-- Hindi Songs -->
+	{% if not query_search %}
+	<header class="section-heading">
+		<h5 class="section-title">HINDI SONGS</h5>
+	</header>
+	<hr>
+	{% endif %}
+	<!-- Song list -->
+	<div class="row" style="margin-right: 65px;margin-left:-15px">
+		{% if hindi_songs %}
+		{% for song in hindi_songs %}
+		<div class="p-3 mb-4 bg-dark text-white" height="90" style="border-radius: 20px 20px 20px 20px;" width="80">
+			<div class="container">
+				<div class="row justify-content-md-center">
+					<div class="col-md-auto">
+						<img class="img-responsive" height="135" src="{{ song.song_img.url}}"
+							 style="border-radius: 8px 8px 8px 8px;"
+							 width="135">
+					</div>
+					<div class="col-md-auto">
+						<div class="row justify-content-md-center">
+							<a class="btn btn-outline-light mt-5 mx-1" href="{% url 'play_song_index' song.id %}"><i
+									aria-hidden="true" class="fa fa-play"></i></a>
+							<a class="btn btn-outline-light mt-5 mx-1" href="{% url 'detail' song.id %}"><i
+									aria-hidden="true" class="fa fa-info-circle"></i></a>
+						</div>
+						<div class="row justify-content-md-center">
+						<div class = "text-white">
+							<h3 class="product-title">{{song.name}}</h3>
+							<h6>By: {{song.singer}}</h6>
+						</div>
+					</div>
+					</div>
+				</div>
+				<br>
+			</div>
+		</div>
+		{% endfor %}
+		{% endif %}
+		{% if not query_search %}
+		<a class="btn btn-primary float-right" href="{% url 'hindi_songs' %}" style="height: 135px;">
+			<center style="margin-top: 45px;">View all <i aria-hidden="true" class="fa fa-arrow-right"></i></center>
+		</a>
+		{% endif %}
+	</div>
+	<br>
+	<br>
+
+	<!-- English Songs -->
+	{% if not query_search %}
+	<header class="section-heading">
+		<h5 class="section-title">ENGLISH SONGS</h5>
+	</header>
+	<hr>
+	{% endif %}
+	<!-- Song list -->
+	<div class="row" style="margin-right: 65px;margin-left:-15px">
+		{% if english_songs %}
+		{% for song in english_songs %}
+		<div class="p-3 mb-4 bg-dark text-white" height="90" style="border-radius: 20px 20px 20px 20px;" width="80">
+			<div class="container">
+				<div class="row justify-content-md-center">
+					<div class="col-md-auto">
+						<img class="img-responsive" height="135" src="{{ song.song_img.url}}"
+							 style="border-radius: 8px 8px 8px 8px;"
+							 width="135">
+					</div>
+					<div class="col-md-auto">
+						<div class="row justify-content-md-center">
+							<a class="btn btn-outline-light mt-5 mx-1" href="{% url 'play_song_index' song.id %}"><i
+									aria-hidden="true" class="fa fa-play"></i></a>
+							<a class="btn btn-outline-light mt-5 mx-1" href="{% url 'detail' song.id %}"><i
+									aria-hidden="true" class="fa fa-info-circle"></i></a>
+						</div>
+						<div class="row justify-content-md-center">
+						<div class = "text-white">
+							<h3 class="product-title">{{song.name}}</h3>
+							<h6>By: {{song.singer}}</h6>
+						</div>
+					</div>
+					</div>
+				</div>
+				<br>
+			</div>
+		</div>
+		{% endfor %}
+		{% endif %}
+		{% if not query_search %}
+		<a class="btn btn-primary float-right" href="{% url 'english_songs' %}" style="height: 135px;">
+			<center style="margin-top: 45px;">View all <i aria-hidden="true" class="fa fa-arrow-right"></i></center>
+		</a>
+		{% endif %}
+	</div>
+</div>
+<br>
+<br>
+<br>
+<br>
+<br>
+
+<footer class="footer">
+
+</footer>
+
+{% endblock body %}

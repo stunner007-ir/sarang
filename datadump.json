@@ -1,0 +1,1339 @@
+[
+    {
+        "model": "admin.logentry",
+        "pk": 102,
+        "fields": {
+            "action_time": "2024-01-06T18:27:45.663Z",
+            "user": 14,
+            "content_type": 4,
+            "object_id": "1",
+            "object_repr": "admin",
+            "action_flag": 3,
+            "change_message": ""
+        }
+    },
+    {
+        "model": "admin.logentry",
+        "pk": 103,
+        "fields": {
+            "action_time": "2024-01-06T18:27:45.690Z",
+            "user": 14,
+            "content_type": 4,
+            "object_id": "6",
+            "object_repr": "prerak",
+            "action_flag": 3,
+            "change_message": ""
+        }
+    },
+    {
+        "model": "admin.logentry",
+        "pk": 104,
+        "fields": {
+            "action_time": "2024-01-06T18:27:45.693Z",
+            "user": 14,
+            "content_type": 4,
+            "object_id": "11",
+            "object_repr": "test",
+            "action_flag": 3,
+            "change_message": ""
+        }
+    },
+    {
+        "model": "admin.logentry",
+        "pk": 105,
+        "fields": {
+            "action_time": "2024-01-06T18:27:45.696Z",
+            "user": 14,
+            "content_type": 4,
+            "object_id": "12",
+            "object_repr": "test1",
+            "action_flag": 3,
+            "change_message": ""
+        }
+    },
+    {
+        "model": "admin.logentry",
+        "pk": 106,
+        "fields": {
+            "action_time": "2024-01-06T18:27:45.699Z",
+            "user": 14,
+            "content_type": 4,
+            "object_id": "9",
+            "object_repr": "varad",
+            "action_flag": 3,
+            "change_message": ""
+        }
+    },
+    {
+        "model": "admin.logentry",
+        "pk": 107,
+        "fields": {
+            "action_time": "2024-01-07T12:51:08.921Z",
+            "user": 14,
+            "content_type": 13,
+            "object_id": "18",
+            "object_repr": "Kabhi Shamm Dhale",
+            "action_flag": 1,
+            "change_message": "[{\"added\": {}}]"
+        }
+    },
+    {
+        "model": "admin.logentry",
+        "pk": 108,
+        "fields": {
+            "action_time": "2024-01-07T12:52:11.587Z",
+            "user": 14,
+            "content_type": 13,
+            "object_id": "18",
+            "object_repr": "Kabhi Shamm Dhale",
+            "action_flag": 2,
+            "change_message": "[{\"changed\": {\"fields\": [\"song_img\"]}}]"
+        }
+    },
+    {
+        "model": "admin.logentry",
+        "pk": 109,
+        "fields": {
+            "action_time": "2024-01-07T13:07:09.999Z",
+            "user": 14,
+            "content_type": 13,
+            "object_id": "19",
+            "object_repr": "Lambiya si Judaiyan",
+            "action_flag": 1,
+            "change_message": "[{\"added\": {}}]"
+        }
+    },
+    {
+        "model": "admin.logentry",
+        "pk": 110,
+        "fields": {
+            "action_time": "2024-01-07T13:12:47.585Z",
+            "user": 14,
+            "content_type": 13,
+            "object_id": "20",
+            "object_repr": "Milne Hai Mujhse Aayi",
+            "action_flag": 1,
+            "change_message": "[{\"added\": {}}]"
+        }
+    },
+    {
+        "model": "auth.permission",
+        "pk": 1,
+        "fields": {
+            "name": "Can add log entry",
+            "content_type": 1,
+            "codename": "add_logentry"
+        }
+    },
+    {
+        "model": "auth.permission",
+        "pk": 2,
+        "fields": {
+            "name": "Can change log entry",
+            "content_type": 1,
+            "codename": "change_logentry"
+        }
+    },
+    {
+        "model": "auth.permission",
+        "pk": 3,
+        "fields": {
+            "name": "Can delete log entry",
+            "content_type": 1,
+            "codename": "delete_logentry"
+        }
+    },
+    {
+        "model": "auth.permission",
+        "pk": 4,
+        "fields": {
+            "name": "Can view log entry",
+            "content_type": 1,
+            "codename": "view_logentry"
+        }
+    },
+    {
+        "model": "auth.permission",
+        "pk": 5,
+        "fields": {
+            "name": "Can add permission",
+            "content_type": 2,
+            "codename": "add_permission"
+        }
+    },
+    {
+        "model": "auth.permission",
+        "pk": 6,
+        "fields": {
+            "name": "Can change permission",
+            "content_type": 2,
+            "codename": "change_permission"
+        }
+    },
+    {
+        "model": "auth.permission",
+        "pk": 7,
+        "fields": {
+            "name": "Can delete permission",
+            "content_type": 2,
+            "codename": "delete_permission"
+        }
+    },
+    {
+        "model": "auth.permission",
+        "pk": 8,
+        "fields": {
+            "name": "Can view permission",
+            "content_type": 2,
+            "codename": "view_permission"
+        }
+    },
+    {
+        "model": "auth.permission",
+        "pk": 9,
+        "fields": {
+            "name": "Can add group",
+            "content_type": 3,
+            "codename": "add_group"
+        }
+    },
+    {
+        "model": "auth.permission",
+        "pk": 10,
+        "fields": {
+            "name": "Can change group",
+            "content_type": 3,
+            "codename": "change_group"
+        }
+    },
+    {
+        "model": "auth.permission",
+        "pk": 11,
+        "fields": {
+            "name": "Can delete group",
+            "content_type": 3,
+            "codename": "delete_group"
+        }
+    },
+    {
+        "model": "auth.permission",
+        "pk": 12,
+        "fields": {
+            "name": "Can view group",
+            "content_type": 3,
+            "codename": "view_group"
+        }
+    },
+    {
+        "model": "auth.permission",
+        "pk": 13,
+        "fields": {
+            "name": "Can add user",
+            "content_type": 4,
+            "codename": "add_user"
+        }
+    },
+    {
+        "model": "auth.permission",
+        "pk": 14,
+        "fields": {
+            "name": "Can change user",
+            "content_type": 4,
+            "codename": "change_user"
+        }
+    },
+    {
+        "model": "auth.permission",
+        "pk": 15,
+        "fields": {
+            "name": "Can delete user",
+            "content_type": 4,
+            "codename": "delete_user"
+        }
+    },
+    {
+        "model": "auth.permission",
+        "pk": 16,
+        "fields": {
+            "name": "Can view user",
+            "content_type": 4,
+            "codename": "view_user"
+        }
+    },
+    {
+        "model": "auth.permission",
+        "pk": 17,
+        "fields": {
+            "name": "Can add content type",
+            "content_type": 5,
+            "codename": "add_contenttype"
+        }
+    },
+    {
+        "model": "auth.permission",
+        "pk": 18,
+        "fields": {
+            "name": "Can change content type",
+            "content_type": 5,
+            "codename": "change_contenttype"
+        }
+    },
+    {
+        "model": "auth.permission",
+        "pk": 19,
+        "fields": {
+            "name": "Can delete content type",
+            "content_type": 5,
+            "codename": "delete_contenttype"
+        }
+    },
+    {
+        "model": "auth.permission",
+        "pk": 20,
+        "fields": {
+            "name": "Can view content type",
+            "content_type": 5,
+            "codename": "view_contenttype"
+        }
+    },
+    {
+        "model": "auth.permission",
+        "pk": 21,
+        "fields": {
+            "name": "Can add session",
+            "content_type": 6,
+            "codename": "add_session"
+        }
+    },
+    {
+        "model": "auth.permission",
+        "pk": 22,
+        "fields": {
+            "name": "Can change session",
+            "content_type": 6,
+            "codename": "change_session"
+        }
+    },
+    {
+        "model": "auth.permission",
+        "pk": 23,
+        "fields": {
+            "name": "Can delete session",
+            "content_type": 6,
+            "codename": "delete_session"
+        }
+    },
+    {
+        "model": "auth.permission",
+        "pk": 24,
+        "fields": {
+            "name": "Can view session",
+            "content_type": 6,
+            "codename": "view_session"
+        }
+    },
+    {
+        "model": "auth.permission",
+        "pk": 25,
+        "fields": {
+            "name": "Can add site",
+            "content_type": 7,
+            "codename": "add_site"
+        }
+    },
+    {
+        "model": "auth.permission",
+        "pk": 26,
+        "fields": {
+            "name": "Can change site",
+            "content_type": 7,
+            "codename": "change_site"
+        }
+    },
+    {
+        "model": "auth.permission",
+        "pk": 27,
+        "fields": {
+            "name": "Can delete site",
+            "content_type": 7,
+            "codename": "delete_site"
+        }
+    },
+    {
+        "model": "auth.permission",
+        "pk": 28,
+        "fields": {
+            "name": "Can view site",
+            "content_type": 7,
+            "codename": "view_site"
+        }
+    },
+    {
+        "model": "auth.permission",
+        "pk": 29,
+        "fields": {
+            "name": "Can add email address",
+            "content_type": 8,
+            "codename": "add_emailaddress"
+        }
+    },
+    {
+        "model": "auth.permission",
+        "pk": 30,
+        "fields": {
+            "name": "Can change email address",
+            "content_type": 8,
+            "codename": "change_emailaddress"
+        }
+    },
+    {
+        "model": "auth.permission",
+        "pk": 31,
+        "fields": {
+            "name": "Can delete email address",
+            "content_type": 8,
+            "codename": "delete_emailaddress"
+        }
+    },
+    {
+        "model": "auth.permission",
+        "pk": 32,
+        "fields": {
+            "name": "Can view email address",
+            "content_type": 8,
+            "codename": "view_emailaddress"
+        }
+    },
+    {
+        "model": "auth.permission",
+        "pk": 33,
+        "fields": {
+            "name": "Can add email confirmation",
+            "content_type": 9,
+            "codename": "add_emailconfirmation"
+        }
+    },
+    {
+        "model": "auth.permission",
+        "pk": 34,
+        "fields": {
+            "name": "Can change email confirmation",
+            "content_type": 9,
+            "codename": "change_emailconfirmation"
+        }
+    },
+    {
+        "model": "auth.permission",
+        "pk": 35,
+        "fields": {
+            "name": "Can delete email confirmation",
+            "content_type": 9,
+            "codename": "delete_emailconfirmation"
+        }
+    },
+    {
+        "model": "auth.permission",
+        "pk": 36,
+        "fields": {
+            "name": "Can view email confirmation",
+            "content_type": 9,
+            "codename": "view_emailconfirmation"
+        }
+    },
+    {
+        "model": "auth.permission",
+        "pk": 37,
+        "fields": {
+            "name": "Can add social account",
+            "content_type": 10,
+            "codename": "add_socialaccount"
+        }
+    },
+    {
+        "model": "auth.permission",
+        "pk": 38,
+        "fields": {
+            "name": "Can change social account",
+            "content_type": 10,
+            "codename": "change_socialaccount"
+        }
+    },
+    {
+        "model": "auth.permission",
+        "pk": 39,
+        "fields": {
+            "name": "Can delete social account",
+            "content_type": 10,
+            "codename": "delete_socialaccount"
+        }
+    },
+    {
+        "model": "auth.permission",
+        "pk": 40,
+        "fields": {
+            "name": "Can view social account",
+            "content_type": 10,
+            "codename": "view_socialaccount"
+        }
+    },
+    {
+        "model": "auth.permission",
+        "pk": 41,
+        "fields": {
+            "name": "Can add social application",
+            "content_type": 11,
+            "codename": "add_socialapp"
+        }
+    },
+    {
+        "model": "auth.permission",
+        "pk": 42,
+        "fields": {
+            "name": "Can change social application",
+            "content_type": 11,
+            "codename": "change_socialapp"
+        }
+    },
+    {
+        "model": "auth.permission",
+        "pk": 43,
+        "fields": {
+            "name": "Can delete social application",
+            "content_type": 11,
+            "codename": "delete_socialapp"
+        }
+    },
+    {
+        "model": "auth.permission",
+        "pk": 44,
+        "fields": {
+            "name": "Can view social application",
+            "content_type": 11,
+            "codename": "view_socialapp"
+        }
+    },
+    {
+        "model": "auth.permission",
+        "pk": 45,
+        "fields": {
+            "name": "Can add social application token",
+            "content_type": 12,
+            "codename": "add_socialtoken"
+        }
+    },
+    {
+        "model": "auth.permission",
+        "pk": 46,
+        "fields": {
+            "name": "Can change social application token",
+            "content_type": 12,
+            "codename": "change_socialtoken"
+        }
+    },
+    {
+        "model": "auth.permission",
+        "pk": 47,
+        "fields": {
+            "name": "Can delete social application token",
+            "content_type": 12,
+            "codename": "delete_socialtoken"
+        }
+    },
+    {
+        "model": "auth.permission",
+        "pk": 48,
+        "fields": {
+            "name": "Can view social application token",
+            "content_type": 12,
+            "codename": "view_socialtoken"
+        }
+    },
+    {
+        "model": "auth.permission",
+        "pk": 49,
+        "fields": {
+            "name": "Can add song",
+            "content_type": 13,
+            "codename": "add_song"
+        }
+    },
+    {
+        "model": "auth.permission",
+        "pk": 50,
+        "fields": {
+            "name": "Can change song",
+            "content_type": 13,
+            "codename": "change_song"
+        }
+    },
+    {
+        "model": "auth.permission",
+        "pk": 51,
+        "fields": {
+            "name": "Can delete song",
+            "content_type": 13,
+            "codename": "delete_song"
+        }
+    },
+    {
+        "model": "auth.permission",
+        "pk": 52,
+        "fields": {
+            "name": "Can view song",
+            "content_type": 13,
+            "codename": "view_song"
+        }
+    },
+    {
+        "model": "auth.permission",
+        "pk": 53,
+        "fields": {
+            "name": "Can add playlist",
+            "content_type": 14,
+            "codename": "add_playlist"
+        }
+    },
+    {
+        "model": "auth.permission",
+        "pk": 54,
+        "fields": {
+            "name": "Can change playlist",
+            "content_type": 14,
+            "codename": "change_playlist"
+        }
+    },
+    {
+        "model": "auth.permission",
+        "pk": 55,
+        "fields": {
+            "name": "Can delete playlist",
+            "content_type": 14,
+            "codename": "delete_playlist"
+        }
+    },
+    {
+        "model": "auth.permission",
+        "pk": 56,
+        "fields": {
+            "name": "Can view playlist",
+            "content_type": 14,
+            "codename": "view_playlist"
+        }
+    },
+    {
+        "model": "auth.permission",
+        "pk": 57,
+        "fields": {
+            "name": "Can add favourite",
+            "content_type": 15,
+            "codename": "add_favourite"
+        }
+    },
+    {
+        "model": "auth.permission",
+        "pk": 58,
+        "fields": {
+            "name": "Can change favourite",
+            "content_type": 15,
+            "codename": "change_favourite"
+        }
+    },
+    {
+        "model": "auth.permission",
+        "pk": 59,
+        "fields": {
+            "name": "Can delete favourite",
+            "content_type": 15,
+            "codename": "delete_favourite"
+        }
+    },
+    {
+        "model": "auth.permission",
+        "pk": 60,
+        "fields": {
+            "name": "Can view favourite",
+            "content_type": 15,
+            "codename": "view_favourite"
+        }
+    },
+    {
+        "model": "auth.permission",
+        "pk": 61,
+        "fields": {
+            "name": "Can add recent",
+            "content_type": 16,
+            "codename": "add_recent"
+        }
+    },
+    {
+        "model": "auth.permission",
+        "pk": 62,
+        "fields": {
+            "name": "Can change recent",
+            "content_type": 16,
+            "codename": "change_recent"
+        }
+    },
+    {
+        "model": "auth.permission",
+        "pk": 63,
+        "fields": {
+            "name": "Can delete recent",
+            "content_type": 16,
+            "codename": "delete_recent"
+        }
+    },
+    {
+        "model": "auth.permission",
+        "pk": 64,
+        "fields": {
+            "name": "Can view recent",
+            "content_type": 16,
+            "codename": "view_recent"
+        }
+    },
+    {
+        "model": "auth.user",
+        "pk": 13,
+        "fields": {
+            "password": "pbkdf2_sha256$150000$tZ7mEgtXEqcN$X+kHWDqWrXuV/qfVTKB6KovW+K8SNVLIAmTHIn5x1W4=",
+            "last_login": "2024-01-06T19:53:06.235Z",
+            "is_superuser": false,
+            "username": "ishu",
+            "first_name": "",
+            "last_name": "",
+            "email": "",
+            "is_staff": false,
+            "is_active": true,
+            "date_joined": "2024-01-06T18:25:42.015Z",
+            "groups": [],
+            "user_permissions": []
+        }
+    },
+    {
+        "model": "auth.user",
+        "pk": 14,
+        "fields": {
+            "password": "pbkdf2_sha256$150000$35CwMlNg68uf$CrxN+M9j9SF0UA9SFOxp+Sjem3zEHNEdnjbxw5V1L24=",
+            "last_login": "2024-01-07T12:46:14.032Z",
+            "is_superuser": true,
+            "username": "ishuraj",
+            "first_name": "",
+            "last_name": "",
+            "email": "",
+            "is_staff": true,
+            "is_active": true,
+            "date_joined": "2024-01-06T18:27:03.932Z",
+            "groups": [],
+            "user_permissions": []
+        }
+    },
+    {
+        "model": "contenttypes.contenttype",
+        "pk": 1,
+        "fields": {
+            "app_label": "admin",
+            "model": "logentry"
+        }
+    },
+    {
+        "model": "contenttypes.contenttype",
+        "pk": 2,
+        "fields": {
+            "app_label": "auth",
+            "model": "permission"
+        }
+    },
+    {
+        "model": "contenttypes.contenttype",
+        "pk": 3,
+        "fields": {
+            "app_label": "auth",
+            "model": "group"
+        }
+    },
+    {
+        "model": "contenttypes.contenttype",
+        "pk": 4,
+        "fields": {
+            "app_label": "auth",
+            "model": "user"
+        }
+    },
+    {
+        "model": "contenttypes.contenttype",
+        "pk": 5,
+        "fields": {
+            "app_label": "contenttypes",
+            "model": "contenttype"
+        }
+    },
+    {
+        "model": "contenttypes.contenttype",
+        "pk": 6,
+        "fields": {
+            "app_label": "sessions",
+            "model": "session"
+        }
+    },
+    {
+        "model": "contenttypes.contenttype",
+        "pk": 7,
+        "fields": {
+            "app_label": "sites",
+            "model": "site"
+        }
+    },
+    {
+        "model": "contenttypes.contenttype",
+        "pk": 8,
+        "fields": {
+            "app_label": "account",
+            "model": "emailaddress"
+        }
+    },
+    {
+        "model": "contenttypes.contenttype",
+        "pk": 9,
+        "fields": {
+            "app_label": "account",
+            "model": "emailconfirmation"
+        }
+    },
+    {
+        "model": "contenttypes.contenttype",
+        "pk": 10,
+        "fields": {
+            "app_label": "socialaccount",
+            "model": "socialaccount"
+        }
+    },
+    {
+        "model": "contenttypes.contenttype",
+        "pk": 11,
+        "fields": {
+            "app_label": "socialaccount",
+            "model": "socialapp"
+        }
+    },
+    {
+        "model": "contenttypes.contenttype",
+        "pk": 12,
+        "fields": {
+            "app_label": "socialaccount",
+            "model": "socialtoken"
+        }
+    },
+    {
+        "model": "contenttypes.contenttype",
+        "pk": 13,
+        "fields": {
+            "app_label": "musicapp",
+            "model": "song"
+        }
+    },
+    {
+        "model": "contenttypes.contenttype",
+        "pk": 14,
+        "fields": {
+            "app_label": "musicapp",
+            "model": "playlist"
+        }
+    },
+    {
+        "model": "contenttypes.contenttype",
+        "pk": 15,
+        "fields": {
+            "app_label": "musicapp",
+            "model": "favourite"
+        }
+    },
+    {
+        "model": "contenttypes.contenttype",
+        "pk": 16,
+        "fields": {
+            "app_label": "musicapp",
+            "model": "recent"
+        }
+    },
+    {
+        "model": "sessions.session",
+        "pk": "08g65ont27lsfmc8th56ine9p9ft5hga",
+        "fields": {
+            "session_data": "ZGVmMzg0NTRhZTgyMmI3MDg4MTNkZmU1ZGYyMmFjOTdmN2YwMzk5Zjp7fQ==",
+            "expire_date": "2020-07-24T04:59:20.642Z"
+        }
+    },
+    {
+        "model": "sessions.session",
+        "pk": "2rf51d21ebqmgryizeerxvgtlhensj99",
+        "fields": {
+            "session_data": "ZGVmMzg0NTRhZTgyMmI3MDg4MTNkZmU1ZGYyMmFjOTdmN2YwMzk5Zjp7fQ==",
+            "expire_date": "2020-07-24T06:39:19.329Z"
+        }
+    },
+    {
+        "model": "sessions.session",
+        "pk": "3256itnany2ww3r80zun7ztcfysi2dpy",
+        "fields": {
+            "session_data": "OGY2OWY4NjMxM2VjZDUyZTU3YmViYjI4ZWMzZjA1OTI2MjI1MGI2OTp7Il9hdXRoX3VzZXJfaWQiOiI2IiwiX2F1dGhfdXNlcl9iYWNrZW5kIjoiYWxsYXV0aC5hY2NvdW50LmF1dGhfYmFja2VuZHMuQXV0aGVudGljYXRpb25CYWNrZW5kIiwiX2F1dGhfdXNlcl9oYXNoIjoiNTFjZGM2N2U3MzdiMGU5NzgwNDhmZWIxOTEyMDczOTU2ZDk3MWYwMCJ9",
+            "expire_date": "2020-07-28T16:58:44.839Z"
+        }
+    },
+    {
+        "model": "sessions.session",
+        "pk": "8e3yi59dmdu74rm52yembq3urh3sb164",
+        "fields": {
+            "session_data": "YmI2N2NhOGM0YTZhNGNmNTZjZDg4MzVkOWI2Y2M2Mjk3ZDdlYWU2OTp7Il9hdXRoX3VzZXJfaWQiOiIxIiwiX2F1dGhfdXNlcl9iYWNrZW5kIjoiZGphbmdvLmNvbnRyaWIuYXV0aC5iYWNrZW5kcy5Nb2RlbEJhY2tlbmQiLCJfYXV0aF91c2VyX2hhc2giOiJlZGI3OWEyYzFlNDMxZDZmNWVmYWNjYzhmNmI4NDQ1MTRjN2QzNGIxIn0=",
+            "expire_date": "2020-07-24T06:40:33.041Z"
+        }
+    },
+    {
+        "model": "sessions.session",
+        "pk": "f00xqiguw8bhdiic2twobtzaj6owbeor",
+        "fields": {
+            "session_data": "OGY2OWY4NjMxM2VjZDUyZTU3YmViYjI4ZWMzZjA1OTI2MjI1MGI2OTp7Il9hdXRoX3VzZXJfaWQiOiI2IiwiX2F1dGhfdXNlcl9iYWNrZW5kIjoiYWxsYXV0aC5hY2NvdW50LmF1dGhfYmFja2VuZHMuQXV0aGVudGljYXRpb25CYWNrZW5kIiwiX2F1dGhfdXNlcl9oYXNoIjoiNTFjZGM2N2U3MzdiMGU5NzgwNDhmZWIxOTEyMDczOTU2ZDk3MWYwMCJ9",
+            "expire_date": "2020-07-21T17:38:27.679Z"
+        }
+    },
+    {
+        "model": "sessions.session",
+        "pk": "hv24gvnw55h30dnwe5p0y4h2lfzoyxz3",
+        "fields": {
+            "session_data": "OGY2OWY4NjMxM2VjZDUyZTU3YmViYjI4ZWMzZjA1OTI2MjI1MGI2OTp7Il9hdXRoX3VzZXJfaWQiOiI2IiwiX2F1dGhfdXNlcl9iYWNrZW5kIjoiYWxsYXV0aC5hY2NvdW50LmF1dGhfYmFja2VuZHMuQXV0aGVudGljYXRpb25CYWNrZW5kIiwiX2F1dGhfdXNlcl9oYXNoIjoiNTFjZGM2N2U3MzdiMGU5NzgwNDhmZWIxOTEyMDczOTU2ZDk3MWYwMCJ9",
+            "expire_date": "2020-07-31T09:33:55.285Z"
+        }
+    },
+    {
+        "model": "sessions.session",
+        "pk": "i2kjfqcuyo2l0r0wb68dvfqxl7082rxa",
+        "fields": {
+            "session_data": "OWVlN2IxZjZkMzQwMTIzNTBiMzQ3YWEyYmQzZGFmNGVlYmEwNWIwNDp7Il9hdXRoX3VzZXJfaWQiOiI5IiwiX2F1dGhfdXNlcl9iYWNrZW5kIjoiZGphbmdvLmNvbnRyaWIuYXV0aC5iYWNrZW5kcy5Nb2RlbEJhY2tlbmQiLCJfYXV0aF91c2VyX2hhc2giOiJkMjYxNDM1OGZhZmVhZjZmM2Q0MGI2OWY2YzNmMTE0ZjdjM2QzMDQ0In0=",
+            "expire_date": "2020-07-25T04:52:23.018Z"
+        }
+    },
+    {
+        "model": "sessions.session",
+        "pk": "jzunu1l9wy3ypqxj7u1rj2su7y2hbumh",
+        "fields": {
+            "session_data": "MmY1MmQ3NWRlZWU2ZmM2M2Q5Zjc3YWQ5NGI0ZDJlMjFmODExZDg3ODp7Il9hdXRoX3VzZXJfaWQiOiIxNCIsIl9hdXRoX3VzZXJfYmFja2VuZCI6ImRqYW5nby5jb250cmliLmF1dGguYmFja2VuZHMuTW9kZWxCYWNrZW5kIiwiX2F1dGhfdXNlcl9oYXNoIjoiYjA2MjUyOTZmMTdiMjMwNmU0NzNiZjlkYWQzZTMwYzQ5ZmQ4NzY3NiJ9",
+            "expire_date": "2024-01-21T12:46:14.043Z"
+        }
+    },
+    {
+        "model": "sessions.session",
+        "pk": "lvwtsm0bj6w5bqwesu13crx6cs1hbvue",
+        "fields": {
+            "session_data": "OGY2OWY4NjMxM2VjZDUyZTU3YmViYjI4ZWMzZjA1OTI2MjI1MGI2OTp7Il9hdXRoX3VzZXJfaWQiOiI2IiwiX2F1dGhfdXNlcl9iYWNrZW5kIjoiYWxsYXV0aC5hY2NvdW50LmF1dGhfYmFja2VuZHMuQXV0aGVudGljYXRpb25CYWNrZW5kIiwiX2F1dGhfdXNlcl9oYXNoIjoiNTFjZGM2N2U3MzdiMGU5NzgwNDhmZWIxOTEyMDczOTU2ZDk3MWYwMCJ9",
+            "expire_date": "2020-07-27T06:53:01.462Z"
+        }
+    },
+    {
+        "model": "sessions.session",
+        "pk": "sbzxiohpqr1nc1cgy1238my9eoq7mv7k",
+        "fields": {
+            "session_data": "ZGVlNGE0N2Y1NTVkN2VkYmRlYjczM2E1YmEzMDgzYzk1NDY2YzA4Yzp7Il9hdXRoX3VzZXJfaWQiOiIxIiwiX2F1dGhfdXNlcl9iYWNrZW5kIjoiZGphbmdvLmNvbnRyaWIuYXV0aC5iYWNrZW5kcy5Nb2RlbEJhY2tlbmQiLCJfYXV0aF91c2VyX2hhc2giOiI1MDZkZmMxMjc3ZDk2YWJkZGFmMWM2YjY2ZWQ3NWI5Njc0NWI1ZDE1In0=",
+            "expire_date": "2020-07-27T07:00:23.118Z"
+        }
+    },
+    {
+        "model": "sessions.session",
+        "pk": "xzcmw5bfivapz519uko4y61wfn49ufa5",
+        "fields": {
+            "session_data": "MzFmY2ZmMmU3MWMyM2ZlYzZlMDgyMWFkZDQ0NjkyOGU3NzM5MzRiYTp7InNvY2lhbGFjY291bnRfc3RhdGUiOlt7InByb2Nlc3MiOiJsb2dpbiIsInNjb3BlIjoiIiwiYXV0aF9wYXJhbXMiOiIifSwiVGRjSWV2dHJWT2pUIl19",
+            "expire_date": "2020-07-21T12:09:17.334Z"
+        }
+    },
+    {
+        "model": "sessions.session",
+        "pk": "zut4utxair383d60mzja4pgw1we62hh5",
+        "fields": {
+            "session_data": "OWVlN2IxZjZkMzQwMTIzNTBiMzQ3YWEyYmQzZGFmNGVlYmEwNWIwNDp7Il9hdXRoX3VzZXJfaWQiOiI5IiwiX2F1dGhfdXNlcl9iYWNrZW5kIjoiZGphbmdvLmNvbnRyaWIuYXV0aC5iYWNrZW5kcy5Nb2RlbEJhY2tlbmQiLCJfYXV0aF91c2VyX2hhc2giOiJkMjYxNDM1OGZhZmVhZjZmM2Q0MGI2OWY2YzNmMTE0ZjdjM2QzMDQ0In0=",
+            "expire_date": "2020-07-26T13:57:44.239Z"
+        }
+    },
+    {
+        "model": "sites.site",
+        "pk": 1,
+        "fields": {
+            "domain": "127.0.0.1",
+            "name": "example.com"
+        }
+    },
+    {
+        "model": "socialaccount.socialapp",
+        "pk": 1,
+        "fields": {
+            "provider": "google",
+            "provider_id": "",
+            "name": "Google",
+            "client_id": "257645941742-33srt0l2ue86p4d1heik9istjlbms4i0.apps.googleusercontent.com",
+            "secret": "ewsLTUy-lnwR4_OuCFga-G7R",
+            "key": "",
+            "settings": {},
+            "sites": [
+                1
+            ]
+        }
+    },
+    {
+        "model": "musicapp.song",
+        "pk": 1,
+        "fields": {
+            "name": "Asal Mein",
+            "album": "Asal Mein",
+            "language": "Hindi",
+            "song_img": "asalmein.jpg",
+            "year": 2020,
+            "singer": "Darshan Raval",
+            "song_file": "Asal_Mein_-_Darshan_Raval_128_Kbps.mp3"
+        }
+    },
+    {
+        "model": "musicapp.song",
+        "pk": 2,
+        "fields": {
+            "name": "Baarish",
+            "album": "Half Girlfriend",
+            "language": "Hindi",
+            "song_img": "Baarish.jpeg",
+            "year": 2017,
+            "singer": "Ash King, Shashaa Tirupati",
+            "song_file": "01_-_Baarish_-_Half_Girlfriend_DJMaza.Life.mp3"
+        }
+    },
+    {
+        "model": "musicapp.song",
+        "pk": 3,
+        "fields": {
+            "name": "Soch Na Sake",
+            "album": "Airlift",
+            "language": "Hindi",
+            "song_img": "sochnasake.jpeg",
+            "year": 2015,
+            "singer": "Arijit Singh, Tulsi Kumar",
+            "song_file": "01_-_Soch_Na_Sake_Duet-MyMp3Singer.com.mp3"
+        }
+    },
+    {
+        "model": "musicapp.song",
+        "pk": 4,
+        "fields": {
+            "name": "Gulaabo",
+            "album": "Shaandar",
+            "language": "Hindi",
+            "song_img": "gulaabo.jpg",
+            "year": 2018,
+            "singer": "Vishal Dadlani",
+            "song_file": "01_-_Gulaabo-MyMp3Singer.net.mp3"
+        }
+    },
+    {
+        "model": "musicapp.song",
+        "pk": 5,
+        "fields": {
+            "name": "Ban Ja Tu Meri Rani",
+            "album": "Tumhari Sullu",
+            "language": "Hindi",
+            "song_img": "banjarani.jpg",
+            "year": 2017,
+            "singer": "Guru Randhawa",
+            "song_file": "Guru_Randhawa_-_Ban_Ja_Tu_Meri_Rani.mp3"
+        }
+    },
+    {
+        "model": "musicapp.song",
+        "pk": 6,
+        "fields": {
+            "name": "Aaj Se Teri",
+            "album": "Padman",
+            "language": "Hindi",
+            "song_img": "aajseteri.jpg",
+            "year": 2018,
+            "singer": "Arijit Singh",
+            "song_file": "Aaj_Se_Teri_Padman_128_Kbps.mp3"
+        }
+    },
+    {
+        "model": "musicapp.song",
+        "pk": 7,
+        "fields": {
+            "name": "Bekhayali",
+            "album": "Kabir Singh",
+            "language": "Hindi",
+            "song_img": "bekhayali.jpg",
+            "year": 2019,
+            "singer": "Sachet Tandon",
+            "song_file": "Bekhayali_-_Kabir_Singh_128_Kbps.mp3"
+        }
+    },
+    {
+        "model": "musicapp.song",
+        "pk": 8,
+        "fields": {
+            "name": "Tujhe Kitna Chahne Lage Hum",
+            "album": "Kabir Singh",
+            "language": "Hindi",
+            "song_img": "tujhekitnachahnelagehum.jpg",
+            "year": 2019,
+            "singer": "Arijit Singh",
+            "song_file": "Tujhe_Kitna_Chahne_Lage_-_Kabir_Singh_128_Kbps.mp3"
+        }
+    },
+    {
+        "model": "musicapp.song",
+        "pk": 9,
+        "fields": {
+            "name": "Haaye Oye",
+            "album": "Haaye Oye",
+            "language": "Hindi",
+            "song_img": "haayeoye.jpg",
+            "year": 2019,
+            "singer": "Ash King",
+            "song_file": "Haaye_Oye_-_amlijatt.in.mp3"
+        }
+    },
+    {
+        "model": "musicapp.song",
+        "pk": 10,
+        "fields": {
+            "name": "Sun Saathiya",
+            "album": "ABCD 2",
+            "language": "Hindi",
+            "song_img": "sunsaathiya.jpg",
+            "year": 2015,
+            "singer": "Divya Kumar, Priya Saraiya",
+            "song_file": "Sun_Saathiya.mp3"
+        }
+    },
+    {
+        "model": "musicapp.song",
+        "pk": 11,
+        "fields": {
+            "name": "Tie Me Down",
+            "album": "Gravity",
+            "language": "English",
+            "song_img": "tiemedown.jpg",
+            "year": 2018,
+            "singer": "Gryffin, Elle Duhe",
+            "song_file": "Gryffin_-_Tie_Me_Down_ft._Elley_Duhé.mp3"
+        }
+    },
+    {
+        "model": "musicapp.song",
+        "pk": 12,
+        "fields": {
+            "name": "A Sky Full of Stars",
+            "album": "A Sky Full of Stars",
+            "language": "English",
+            "song_img": "skyfullofstars.jpg",
+            "year": 2014,
+            "singer": "Coldplay",
+            "song_file": "Coldplay_-_A_Sky_Full_Of_Stars.mp3"
+        }
+    },
+    {
+        "model": "musicapp.song",
+        "pk": 13,
+        "fields": {
+            "name": "The Ocean",
+            "album": "The Ocean",
+            "language": "English",
+            "song_img": "ocean.jpg",
+            "year": 2016,
+            "singer": "Mike Perry, Shy Martin",
+            "song_file": "Mike_Perry_-_The_Ocean_ft._Shy_Martin_CC.mp3"
+        }
+    },
+    {
+        "model": "musicapp.song",
+        "pk": 14,
+        "fields": {
+            "name": "Let Me Love You",
+            "album": "Encore",
+            "language": "English",
+            "song_img": "letmeloveyou.jpg",
+            "year": 2016,
+            "singer": "Justin Bieber, DJ Snake",
+            "song_file": "DJ_Snake_-_Let_Me_Love_You_ft._Justin_Bieber_Official_Video.mp3"
+        }
+    },
+    {
+        "model": "musicapp.song",
+        "pk": 15,
+        "fields": {
+            "name": "I Like Me Better",
+            "album": "I Met You When I Was 18",
+            "language": "English",
+            "song_img": "ilikemebetter.jpg",
+            "year": 2017,
+            "singer": "Lauv",
+            "song_file": "Lauv_-_I_Like_Me_Better.mp3"
+        }
+    },
+    {
+        "model": "musicapp.song",
+        "pk": 16,
+        "fields": {
+            "name": "Attention",
+            "album": "Thing For You",
+            "language": "English",
+            "song_img": "attention.png",
+            "year": 2017,
+            "singer": "Charlie Puth",
+            "song_file": "Attention_-_Charlie_Puth.mp3"
+        }
+    },
+    {
+        "model": "musicapp.song",
+        "pk": 17,
+        "fields": {
+            "name": "Girls Like You",
+            "album": "Red Pill Blues",
+            "language": "English",
+            "song_img": "girlslikeyou.jpg",
+            "year": 2018,
+            "singer": "Maroon 5, Cardi B",
+            "song_file": "Maroon_5_-_Girls_Like_You_ft._Cardi_B.mp3"
+        }
+    },
+    {
+        "model": "musicapp.song",
+        "pk": 18,
+        "fields": {
+            "name": "Kabhi Shamm Dhale",
+            "album": "Hindi Song",
+            "language": "Hindi",
+            "song_img": "16315_4.jpg",
+            "year": 2023,
+            "singer": "Mohammad Faiz",
+            "song_file": "Kabhi-Shaam-DhalePaglaSongs_phnKDDq.mp3"
+        }
+    },
+    {
+        "model": "musicapp.song",
+        "pk": 19,
+        "fields": {
+            "name": "Lambiya si Judaiyan",
+            "album": "Raabta",
+            "language": "Hindi",
+            "song_img": "12362_4.jpg",
+            "year": 2016,
+            "singer": "Arijit Singh",
+            "song_file": "Lambiya-Si-Judaiya_192PaglaSongs.mp3"
+        }
+    },
+    {
+        "model": "musicapp.song",
+        "pk": 20,
+        "fields": {
+            "name": "Milne Hai Mujhse Aayi",
+            "album": "Aashiqi 2",
+            "language": "Hindi",
+            "song_img": "6770_4.jpg",
+            "year": 2012,
+            "singer": "Arijit Singh",
+            "song_file": "Milne-Hai-Mujhse-Aayi_192PaglaSongs.mp3"
+        }
+    },
+    {
+        "model": "musicapp.playlist",
+        "pk": 71,
+        "fields": {
+            "user": 13,
+            "playlist_name": "my",
+            "song": 2
+        }
+    },
+    {
+        "model": "musicapp.playlist",
+        "pk": 72,
+        "fields": {
+            "user": 13,
+            "playlist_name": "my",
+            "song": 2
+        }
+    },
+    {
+        "model": "musicapp.favourite",
+        "pk": 12,
+        "fields": {
+            "user": 13,
+            "song": 2,
+            "is_fav": true
+        }
+    },
+    {
+        "model": "musicapp.favourite",
+        "pk": 13,
+        "fields": {
+            "user": 14,
+            "song": 19,
+            "is_fav": true
+        }
+    },
+    {
+        "model": "musicapp.recent",
+        "pk": 415,
+        "fields": {
+            "user": 14,
+            "song": 2
+        }
+    },
+    {
+        "model": "musicapp.recent",
+        "pk": 419,
+        "fields": {
+            "user": 13,
+            "song": 2
+        }
+    },
+    {
+        "model": "musicapp.recent",
+        "pk": 420,
+        "fields": {
+            "user": 13,
+            "song": 11
+        }
+    },
+    {
+        "model": "musicapp.recent",
+        "pk": 421,
+        "fields": {
+            "user": 13,
+            "song": 5
+        }
+    },
+    {
+        "model": "musicapp.recent",
+        "pk": 423,
+        "fields": {
+            "user": 13,
+            "song": 1
+        }
+    },
+    {
+        "model": "musicapp.recent",
+        "pk": 424,
+        "fields": {
+            "user": 14,
+            "song": 18
+        }
+    },
+    {
+        "model": "musicapp.recent",
+        "pk": 428,
+        "fields": {
+            "user": 14,
+            "song": 19
+        }
+    },
+    {
+        "model": "musicapp.recent",
+        "pk": 430,
+        "fields": {
+            "user": 14,
+            "song": 1
+        }
+    }
+]

@@ -1,0 +1,50 @@
+{% extends 'base.html' %}
+{% load socialaccount %}
+{% block title %} English Songs {% endblock title %}
+
+{% block body %}
+
+<br>
+<!-- English Songs -->
+<div class="container">
+	<header class="section-heading">
+		<h5 class="section-title">ENGLISH SONGS</h5>
+	</header>
+	<hr>
+	<!-- Song list -->
+	<div class="row" style="margin-right: 65px;margin-left:-15px">
+		{% if english_songs %}
+		{% for song in english_songs %}
+		<div class="p-3 mb-4 bg-dark text-white" height="90" style="border-radius: 20px 20px 20px 20px;" width="80">
+			<div class="container">
+				<div class="row justify-content-md-center">
+					<div class="col-md-auto">
+						<img class="img-responsive" height="135" src="{{ song.song_img.url}}"
+							 style="border-radius: 8px 8px 8px 8px;"
+							 width="135">
+					</div>
+					<div class="col-md-auto">
+						<div class="row justify-content-md-center">
+							<a class="btn btn-outline-light mt-5 mx-1" href="{% url 'play_song_index' song.id %}"><i
+									aria-hidden="true" class="fa fa-play"></i></a>
+							<a class="btn btn-outline-light mt-5 mx-1" href="{% url 'detail' song.id %}"><i
+									aria-hidden="true" class="fa fa-info-circle"></i></a>
+						</div>
+						<div class="row justify-content-md-center">
+						<div class = "text-white">
+							<h3 class="product-title">{{song.name}}</h3>
+							<h6>By: {{song.singer}}</h6>
+						</div>
+					</div>
+					</div>
+				</div>
+				<br>
+			</div>
+		</div>
+		{% endfor %}
+		{% endif %}
+	</div>
+</div>
+
+
+{% endblock body %}
