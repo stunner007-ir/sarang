@@ -95,11 +95,11 @@ DATABASES = {
     # },
     'default': {
         'ENGINE': 'django.db.backends.postgresql_psycopg2',
-        'NAME': 'sarang',
+        'NAME': 'railway',
         'USER': 'postgres',
-        'PASSWORD': 'ishu1414',
-        'HOST': '*',
-        'PORT': '5432'
+        'PASSWORD': 'AdDC*cC2dFC2bE654c2--d5Eg2defcgG',
+        'HOST': 'viaduct.proxy.rlwy.net',
+        'PORT': '32775'
     }
 }
 
@@ -138,7 +138,7 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/3.0/howto/static-files/
 
 STATIC_URL = '/static/'
-# STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles/')
+STATIC_ROOT = os.path.join(BASE_DIR, '/static/')
 # STATICFILES_DIRS = ()
 
 MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
